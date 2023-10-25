@@ -5,12 +5,12 @@ BaseCaching module
 from base_caching import BaseCaching
 
 class FIFOCache(BaseCaching):
-	def __init__(self):
-		super().__init__()
-		self.order = []
+    def __init__(self):
+        super().__init__()
+        self.order = []
 
 def put(self, key, item):
-	     pass
+         pass
         else:
             length = len(self.cache_data)
             if length >= BaseCaching.MAX_ITEMS and key not in self.cache_data:
@@ -25,5 +25,5 @@ def put(self, key, item):
         Return the value linked to a given key, or None
         """
         if key is not None and key in self.cache_data.keys():
-        	return self.cache_data[key]
+            return self.cache_data[key]
     return None  
